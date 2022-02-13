@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            heroColor: '#6500a3',
+          },
+          opacity: {
+            '45': '.45',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;500&family=Red+Hat+Display:wght@300;400;500;700;900&family=Righteous&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;500&family=Red+Hat+Display:wght@300;400;500;700;900&family=Righteous&display=swap');
+  </style>
+  <title> Stats Preview Card </title>
+</head>
+<body style="background-color: hsl(233, 47%, 7%); font-family: 'Inter', sans-serif;" class="">
+  <main class="flex justify-center my-20 md:my-32 lg:my-56">
+    <div style="background-color: hsl(244, 38%, 16%);" class="flex flex-col lg:flex-row-reverse justify-between rounded-lg items-center w-9/12 lg:w-10/12 shadow-xl">
+      <div class="relative rounded-lg w-full">
+        <img src="./images/image-header-desktop.jpg" alt="hero-image" class="w-full h-96 object-fit object-cover rounded-t-xl lg:rounded-r-xl " />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-heroColor via-heroColor to-heroColor w-full h-full opacity-45 rounded-t-xl lg:rounded-r-xl "> </div>
+      </div>
+      <div class="lg:text-left text-center lg:text-left mt-8 md:mt-16 lg:mt-0 lg:mx-12 w-11/12">
+        <h3 class="text-white text-3xl md:text-4xl font-extrabold"> Get <p style="color: hsl(277, 64%, 61%);" class="inline "> insights </p> that help your business grow. </h3>
+        <p style="color: hsla(0, 0%, 100%, 0.75); " class="mx-6 md:mx-16 lg:mx-0 text-sm font-light w-10/12 md:w-9/12 lg:w-10/12 pt-5 "> Discover the benifits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency. </p>
+        <div class="grid grid-rows-3 lg:grid-rows-1 grid-flow-col mt-10 lg:mt-16 gap-12 pb-12 lg:pb-0">
+          <div class="flex flex-col lg:text-left text-center">
+            <h3 style="color:hsla(0, 0%, 100%, 0.6); " class="lg:uppercase font-extrabold pb-1"> 10k+ </h3>
+            <p style="color: hsla(0, 0%, 100%, 0.75)" class="font-light text-xs"> COMPANIES </p>
+          </div>
+          <div class="flex flex-col lg:text-left text-center">
+            <h3 style="color:hsla(0, 0%, 100%, 0.6); " class="font-extrabold pb-1"> 314 </h3>
+            <p style="color: hsla(0, 0%, 100%, 0.75)" class="font-light text-xs"> TEMPLATES </p>
+          </div>
+          <div class="flex flex-col lg:text-left text-center">
+            <h3 style="color:hsla(0, 0%, 100%, 0.6); " class="font-extrabold pb-1"> 12M+ </h3>
+            <p style="color: hsla(0, 0%, 100%, 0.75)" class="font-light text-xs"> QUERIES </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
